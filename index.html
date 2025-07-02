@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ludo Game</title>
+
+        <style>
+                div {
+                        margin: 100px auto;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 20px;
+                }
+
+                button {
+                        height: 200px;
+                        width: 200px;
+                        background-size: 100% 100%;
+                }
+        </style>
+</head>
+
+<body>
+        <div>
+                <h1 class="show"></h1>
+                <button class="btn"></button>
+        </div>
+        <script>
+                btn = document.querySelector(".btn");
+                btn.onclick = () => {
+                        show = document.querySelector(".show");
+                        num = Math.floor(Math.random() * (7 - 1) + 1);
+                        show.innerHTML = num;
+
+                        if (num == 1) {
+                                btn.style.background = "url('ludoimage/dice1.jpeg')";
+                                btn.style.backgroundSize = "100% 100%";
+
+                        }
+
+                        if (num == 2) {
+                                btn.style.background = "url('ludoimage/ludo2.jpeg')";
+                                btn.style.backgroundSize = "100% 100%";
+
+                        }
+
+                        if (num == 3) {
+                                btn.style.background = "url('ludoimage/dice3.jpeg')";
+                                btn.style.backgroundSize = "100% 100%";
+
+                        }
+
+                        if (num == 4) {
+                                btn.style.background = "url('ludoimage/dice4.png')";
+                                btn.style.backgroundSize = "100% 100%";
+
+                        }
+
+                        if (num == 5) {
+                                btn.style.background = "url('ludoimage/dice5.jpeg')";
+                                btn.style.backgroundSize = "100% 100%";
+
+                        }
+                        if (num == 6) {
+                                btn.style.background = "url('ludoimage/dice6.jpeg')";
+                                btn.style.backgroundSize = "100% 100%";
+
+                        }
+
+                }
+        </script>
+
+</body>
+
+</html>
